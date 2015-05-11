@@ -68,6 +68,10 @@ def index():
         return redirect(url_for('index'))
     return render_template('index.html', form=form, name=session.get('name'))
 
+@app.route('/admin')
+def admin_info():
+    return render_template('admin.html')
+
 
 if __name__ == '__main__':
     db.create_all()

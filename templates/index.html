@@ -1,12 +1,12 @@
 {% extends "base.html" %}
 {% import "bootstrap/wtf.html" as wtf %}
 
-{% block title %}Flasky{% endblock %}
+{% block title %}Блавскы{% endblock %}
 
 {% block page_content %}
 <div class="page-header">
     <h1>
-        <font color="green" face="verdana">Здравствыте, {% if name %}{{ name }}{% else %}Stranger{% endif %}!</font>
+        <font color="green" face="verdana">Здравствыте, {% if name %}{{ name }}{% else %}незнакомец{% endif %}!</font>
     </h1>
 </div>
 {{ wtf.quick_form(form) }}
